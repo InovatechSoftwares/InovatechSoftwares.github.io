@@ -1,6 +1,7 @@
 :root {
     --BackgroundColor: #3a5163;
     --TitleBackgroundColor: #2c3d4a;
+    --TitleTextColor: #ffffff;
 }
 
 body {
