@@ -1,6 +1,7 @@
 :root {
     --BackgroundColor: #3a5163;
     --TitleBackgroundColor: #2c3d4a;
+    --TitleTextColor: #ffffff;
 }
 
 body {
@@ -10,4 +11,9 @@ body {
 #Title {
     background-color: var(--TitleBackgroundColor);
     margin: 10%;
+    padding: 5%;
+}
+
+#TitleText {
+    color: var(--TitleTextColor);
 }
