@@ -1,0 +1,28 @@
+:root {
+    --background: #e5e5e5;
+    --principalBG: white;
+}
+
+body {
+    background-color: var(--background);
+}
+
+#background {
+    background-color: var(--principalBG);
+    padding: 1%;
+} 
+
+#logo {
+    width: 20%;
+}
+
+#principal {
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#formulario {
+    margin-left: 20%;
+    padding: 1%;
+}
