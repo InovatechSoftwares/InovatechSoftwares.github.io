@@ -1,3 +1,160 @@
 body {
-    background-color: grey;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Now Display Medium', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/*Section soluções*/
+
+.cabecalho-solucoes{
+    text-align: center;
+    font-family: 'Helvetica Now Display Medium', sans-serif;
+    margin-top: 60px;
+}
+
+.solucoes-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-block-end: 60px;
+}
+
+.box{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    transition: all 0.8s;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.box-um{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/administração.jpg) center center no-repeat;
+    background-size: 590px;
+}
+
+.box-um:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/administração.jpg) left center no-repeat;
+    background-size: 690px;
+}
+
+.box-dois{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/arquitetura.jpg) center center no-repeat;
+    background-size: 700px;
+}
+
+.box-dois:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/arquitetura.jpg) left center no-repeat;
+    background-size: 800px;
+}
+
+.box-tres{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/contabilidade.jpg) center center no-repeat;
+    background-size: 500px;
+}
+
+.box-tres:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/contabilidade.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.box-quatro{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/direito.jpg) center center no-repeat;
+    background-size: 500px;
+}
+
+.box-quatro:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/direito.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.box-cinco{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/engenharia.jpg) center center no-repeat;
+    background-size: 500px;
+}
+
+.box-cinco:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/engenharia.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.box-seis{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/finanças.jpg) center center no-repeat;
+    background-size: 550px;
+}
+
+.box-seis:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/finanças.jpg) left center no-repeat;
+    background-size: 650px;
+}
+
+.box-sete{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/informatica.jpg) center center no-repeat;
+    background-size: 500px;
+}
+
+.box-sete:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/informatica.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.box-oito{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/marketing.jpg) center center no-repeat;
+    background-size: 500px;
+}
+
+.box-oito:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/marketing.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.box-nove{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/vendas.jpg) center center no-repeat;
+    background-size: 500px;
+}
+
+.box-nove:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/vendas.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.inner{
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+    text-align: left;
+}
+
+.inner h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 10px;  
+}
+
+.inner button{
+    background: #EEEEEE;
+    border: 2px solid #EEEEEE;
+    color: black;
+    padding: 7px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inner button:hover{
+    background: transparent;
+    border: 2px solid #EEEEEE;
+    transition: .4s;
+    color: white;
 }
