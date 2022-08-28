@@ -8,43 +8,42 @@
     <title>Inovatech</title>
 </head>
 <body>
-    <div>
-        <p>Contato</p>
-    </div>
     <div id="background">
+        <img src="../img/Logo.png" alt="inovatech Logo" id="logo">
         <div id="menu">
-            <img src="../imagens/Logo.png" alt="inovatech Logo" id="logo">
-            <button>Home</button>
-            <button>Soluções</button>
-            <button>Contato</button>
+            <a href="">Home</a>
+            <a href="">Soluções</a>
+            <a href="">Contato</a>
+        </div>
+        <div id="Fale">
+            <h1>Fale conosco</h1>
         </div>
         <div id="principal">
-            <h1>Fale conosco</h1>
+            <p id="TextoMaluco">Temos uma equipe esperando para falar com você em diversos canais.</p>
             <div id="formulario">
-                <p>Temos uma equipe esperando para falar com você em diversos canais.</p>
-                    <form action="/pagina-processa-dados-do-form" method="post">
-                        <div>
+                <form id="oForm" action="/pagina-processa-dados-do-form" method="post">
+                    <div>
                         <label for="nome">Seu nome</label>
-                        <input type="text" id="nome" value="Qual o seu nome?"/>
+                        <input type="text" id="nome" placeholder="Qual o seu nome?"/>
                     </div>
                     <div>
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" value="Qual o seu e-mail?"/>
+                        <input type="email" id="email" placeholder="Qual o seu e-mail?"/>
                     </div>
                     <div>
                         <label for="Seguimento">Seguimento</label>
-                        <input type="text" id="Seguimento" value="Qual o seu nome?"/>
+                        <input type="text" id="Seguimento" placeholder="Qual o seu nome?"/>
                     </div>
                     <div>
                         <label for="Nfuncionarios">Número de funcionários</label>
-                        <input type="text" id="Nfuncionarios" value="Número de funcionários"/>
+                        <input type="text" id="Nfuncionarios" placeholder="Número de funcionários"/>
                     </div>
-                    <div>
+                    <div id="txt">
                         <label for="msg">Mensagem</label>
-                        <textarea id="msg"></textarea>
+                        <textarea id="msg" placeholder="Qual é a sua mensagem?"></textarea>
                     </div>
                 </form>
-                <button>Enviar mensagem</button>
+                <button id="FormSend"><img src="../img/emailicon.png">Enviar mensagem</button>
             </div>
         </div>
     </div>
