@@ -9,10 +9,11 @@
 }
 
 :root{
-	--bg-color: #020312;
-	--text-color: #fff;
+	--bg-color: #fff;
+	--text-color: #020312;
+	--other-text-color: #fff;
 	--main-color: #0342a1;
-	--second-color: gray;
+	--second-color: #242424;
 	--other-color: #12141c;
 	--h1-font: 5.2rem;
 	--h2-font: 3.5rem;
@@ -54,7 +55,7 @@ header{
 }
 .navbar a:hover{
 	background: var(--main-color);
-	color: var(--text-color);
+	color: var(--other-text-color);
 }
 #menu-icon{
 	font-size: 36px;
@@ -141,17 +142,7 @@ header.sticky{
 	line-height: 30px;
 	margin-bottom: 2rem;
 }
-.about-gri{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-	align-items: center;
-	gap: 1rem;
-	margin-bottom: 3rem;
-}
-.about-in h5{
-	font-size: 22px;
-	font-weight: 600;
-}
+
 .about-img img{
 	height: auto;
 	width: 100%;
@@ -180,7 +171,7 @@ header.sticky{
 }
 .box{
 	padding: 45px;
-	background: #12141c;
+	background: #dddddd;
 	border-top: 5px solid transparent;
 	border-radius: 0.5rem;
 	transition: all .40s ease;
@@ -220,7 +211,7 @@ header.sticky{
 }
 .row{
 	padding: 25px;
-	background: #12141c;
+	background: #cacaca;
 	border-radius: 0.5rem;
 	transition: all .40s ease;
 }
@@ -290,7 +281,7 @@ header.sticky{
 .contact-icons i{
 	height: 40px;
 	width: 40px;
-	background: #12141c;
+	background: #cacaca;
 	border-radius: 0.5rem;
 	color: var(--main-color);
 	display: inline-flex;
@@ -315,7 +306,7 @@ form textarea{
 	outline: none;
 	width: 100%;
 	padding: 18px;
-	background: #12141c;
+	background: #dddddd;
 	color: var(--text-color);
 	font-size: 1rem;
 	font-weight: 600;
@@ -335,6 +326,10 @@ form textarea{
 	width: 190px;
 	transition: all .40s ease;
 	cursor: pointer;
+}
+
+.contact-form form .send:hover{
+	color: var(--other-text-color);
 }
 
 .last-text p{
