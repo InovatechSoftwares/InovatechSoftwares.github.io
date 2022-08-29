@@ -399,7 +399,7 @@ form textarea{
 		left: 0;
 		display: flex;
 		flex-direction: column;
-		background: #12141c;
+		background: #ddd;
 		text-align: left;
 		transition: all .40s ease;
 	}
